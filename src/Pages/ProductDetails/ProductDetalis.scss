@@ -1,0 +1,87 @@
+@import '../../Styles/mixins.scss';
+
+.product-detalis {
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 50px;
+    height: 100%;
+    align-items: center;
+
+    @include costum-md {
+        flex-direction: column;
+    }
+
+    .product-detalis-r {
+        min-width: 50%;
+        margin-top: 100px;
+
+        @include costum-md {
+            margin-top:     0px;
+        }
+
+        .img-holder {
+            width: 350px;
+            margin-right: 50px;
+            margin: 0 auto;
+
+            @include costum-md {
+                margin-bottom: 80px;
+            }
+
+            @include respond-sm {
+                width: 220px;
+            }
+
+            img {
+                height: auto;
+                max-width: 90%;
+                display: block;
+            }
+        }
+    }
+
+    .product-detalis-l {
+
+        @include costum-md {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 34px;
+
+            @include respond-lg {
+                font-size: 24px;
+            }
+        }
+
+        p {
+            line-height: 1.3;
+            font-size: 19px;
+            margin-bottom: 30px;
+            color: rgba(0, 0, 0, 0.623);
+
+            @include respond-lg {
+                font-size: 17px;
+            }
+
+        }
+
+        span {
+            margin-bottom: 40px;
+            display: block;
+            font-size: 18px;
+        }
+
+        button {
+            display: block;
+            padding: 6px 10px;
+            border-radius: 20px;
+            font-size: 15px;
+            background-color: none;
+            bottom: 30px;
+        }
+    }
+
+}

@@ -1,0 +1,44 @@
+@import '../../Styles/mixins.scss';
+
+
+.shop {
+    max-width: 1600px;
+    margin: 0 auto;
+
+    .filter-section {
+        display: flex;
+        align-items: center;
+        width: 337px;
+        margin: 50px auto 100px;
+        padding: 10px;
+        border-radius: 30px;
+        box-shadow: 0 4px 18px rgba(26, 26, 26, 0.1);
+
+        input {
+            outline: 0;
+            border: none;
+            border-right: 1px solid black;
+        }
+
+        select {
+            border: none;
+        }
+    }
+
+    .product-holder {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+        gap: 50px;
+        padding: 20px 100px;
+
+        @include costum-md {
+            grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+            padding: 20px 50px;
+        }
+
+        @include costum-sm {
+            padding: 20px;
+        }
+    }
+
+}
