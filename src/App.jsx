@@ -11,14 +11,12 @@ function App() {
     return (
         <>
             <ShopContextProvider>
-                <BrowserRouter>
                     <Navbar />
                     <Routes>
                         <Route path="/" element={<Shop />} />
                         <Route path="/cart" element={<Cart />} />
                         <Route path='/product/:id' element={<ProductDetails />}/>
                     </Routes>
-                </BrowserRouter>
             </ShopContextProvider>
 
         </>
