@@ -10,13 +10,13 @@
     box-shadow: 0 4px 18px rgba(26, 26, 26, 0.1);
     border-radius: 20px;
 
-    @include respond-xl{
+    @include respond-xl {
         width: 600px;
         padding: 15px;
         padding: 15px;
     }
 
-    @include respond-md{
+    @include respond-md {
         width: auto;
     }
 
@@ -47,27 +47,43 @@
         }
 
         .count-hendler {
+            display: flex;
+            align-items: center;
+            gap: 12px;
             width: auto;
 
             button {
-                border: solid 1px black;
+                border: 1px solid black;
                 border-radius: 50%;
-                height: 25px;
-                width: 25px;
-
-                &:first-of-type {
-                    margin-right: 12px;
-                }
+                height: 40px; // 👈 Increased for better tap area
+                width: 40px;
+                background-color: white;
+                font-size: 20px;
+                line-height: 1;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                -webkit-tap-highlight-color: transparent;
+                touch-action: manipulation;
+                user-select: none;
             }
 
             input {
                 border: none;
-                max-width: 50px;
+                width: 50px;
                 text-align: center;
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: 600;
+                padding: 0;
                 box-sizing: border-box;
-                padding: 0; 
+                appearance: textfield;
+
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
             }
         }
     }
