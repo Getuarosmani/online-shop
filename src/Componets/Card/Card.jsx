@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ShopContex } from '../../Context/ShopContextProvider'
-import './Card.scss'
+import './Card.css'
 
 export const Card = ({ product }) => {
     const { addToCart, cartItems, clearCartItem } = useContext(ShopContex);

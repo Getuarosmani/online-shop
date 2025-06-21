@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ShopContex } from '../../Context/ShopContextProvider';
 import { CartItem } from '../../Componets/CartItem/CartItem';
-import './Cart.scss';
+import './Cart.css';
 
 export const Cart = () => {
     const { products, cartItems, getTotalCartPrice } = useContext(ShopContex);

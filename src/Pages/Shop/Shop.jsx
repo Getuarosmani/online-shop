@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext, use } from 'react';
-import './Shop.scss';
+import './Shop.css';
 import { Card } from '../../Componets/Card/Card';
 import { ShopContex } from '../../Context/ShopContextProvider';
 

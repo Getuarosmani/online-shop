@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { ShopContex } from '../../Context/ShopContextProvider'
-import './Navbar.scss'
+import './Navbar.css'
 import { Link } from 'react-router-dom'
 
 export const Navbar = () => {

@@ -2,7 +2,7 @@
 import { useParams } from 'react-router-dom'
 import { useContext } from 'react'
 import { ShopContex } from '../../Context/ShopContextProvider'
-import './ProductDetalis.scss'
+import './ProductDetalis.css'
 
 export const ProductDetails = () => {
     
