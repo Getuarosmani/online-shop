@@ -32,6 +32,10 @@
             appearance: none;
             -webkit-appearance: none;
             -moz-appearance: none;
+
+            @include respond-sm {
+                width: auto;
+            }
         }
     }
 

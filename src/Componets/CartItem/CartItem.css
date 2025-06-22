@@ -21,7 +21,7 @@
 }
 @media (max-width: 768px) {
   .cart-item {
-    width: auto;
+    width: 85%;
   }
 }
 .cart-item .img-holder {

@@ -1,23 +1,16 @@
-
 .shop {
   max-width: 1600px;
   margin: 0 auto;
 }
 .shop .filter-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   width: 337px;
   margin: 50px auto 100px;
   padding: 10px;
   border-radius: 30px;
-  -webkit-box-shadow: 0 4px 18px rgba(26, 26, 26, 0.1);
-          box-shadow: 0 4px 18px rgba(26, 26, 26, 0.1);
+  box-shadow: 0 4px 18px rgba(26, 26, 26, 0.1);
 }
 .shop .filter-section input {
   border: none;
@@ -36,8 +29,12 @@
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+@media (max-width: 576px) {
+  .shop .filter-section select {
+    width: auto;
+  }
+}
 .shop .product-holder {
-  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   gap: 50px;
@@ -53,4 +50,4 @@
   .shop .product-holder {
     padding: 20px;
   }
-}
+}/*# sourceMappingURL=Shop.css.map */
